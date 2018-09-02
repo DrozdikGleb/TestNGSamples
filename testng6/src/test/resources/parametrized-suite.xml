@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterized example suite" verbose="1">
+    <test name="Test1">
+        <packages>
+            <package name="sample02"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Groups example suite" verbose="1">
+    <test name="Test 1">
+        <groups>
+            <run>
+                <!-- будут запущены только тесты группы positive -->
+                <include name="positive"/>  <!-- включить группу -->
+                <!-- не будут запущены тесты группы broken, даже если тест принадлежит группе positive -->
+                <exclude name="broken"/>    <!-- исключить группу -->
+            </run>
+        </groups>
+        <packages>
+            <package name="sample01"/>
+        </packages>
+    </test>
+</suite>

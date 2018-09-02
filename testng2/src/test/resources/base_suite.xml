@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> <!-- формат файла -->
+<suite name="Base Suite" verbose="1"> <!-- один suite в одном файле -->
+    <test name="Test 1"> <!-- тестов может быть сколько угодно -->
+        <packages>
+            <package name="sample01"/> <!-- как и пакетов.
+                    В данном случае запустятся все тесты в пакете sample01 -->
+        </packages>
+        <!--<classes></classes>--> <!-- и классов -->
+        <!--<groups></groups>--> <!-- и групп -->
+    </test>
+</suite>

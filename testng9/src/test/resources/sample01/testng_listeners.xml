@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteListener" verbose="1">
+    <!-- объявить listener можно в конфигурационном файле-->
+    <listeners>
+        <listener class-name="sample01.VideoListener"/>
+    </listeners>
+</suite>

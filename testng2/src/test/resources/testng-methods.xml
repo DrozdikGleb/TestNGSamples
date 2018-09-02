@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite TestNG methods" verbose="1">
+    <test name="Test 1">
+        <!-- тестовые классы будут запускаться в том порядке, в котором указаны -->
+        <classes>
+            <class name="sample01.SecondTest">
+                <methods>
+                    <include name="test1"/> <!-- тест, который должен быть выполнен -->
+                </methods>
+            </class>
+            <class name="sample01.FirstTest">
+                <methods>
+                    <exclude name="test1"/> <!-- тест, который не должен быть выполнен -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
